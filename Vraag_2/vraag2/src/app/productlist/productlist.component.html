@@ -1,0 +1,14 @@
+<table class="product-table">
+  <thead>
+    <tr>
+    <th class="prodname">Product</th>
+    <th>Price</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tr *ngFor="let product of productList">
+    <td>{{ product.name }}</td>
+    <td>{{ product.price | currency:'EUR' }}</td>
+    <td><a (click)="addCart(product)">add to cart</a></td>
+  </tr>
+</table>

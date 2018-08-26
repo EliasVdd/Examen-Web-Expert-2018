@@ -1,0 +1,5 @@
+<img [src]="toilet.afbeelding" [alt]="toilet.adres" />
+<h2>{{ toilet.adres }}</h2>
+<b>{{ toilet.gemeente }}</b>
+<p>Gratis: <span [class]="toilet.prijs <= 0 ? 'groen' : 'rood'">{{ toilet.prijs <= 0 ? 'Ja' : 'Nee' }}</span>
+<span *ngIf="toilet.prijs > 0">(Prijs: {{ toilet.prijs | currency:'EUR' }})</span></p>

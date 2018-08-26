@@ -1,0 +1,25 @@
+:host{
+    background-color: #A7BED3;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    width: 300px;
+    display: block;
+}
+:host select{
+    height: 36px;
+    width: 100px;
+    text-align: center;
+}
+:host button{
+    background-color: #CD5334; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}

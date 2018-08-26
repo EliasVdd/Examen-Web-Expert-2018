@@ -1,0 +1,23 @@
+:host {
+	margin: 0.5rem;
+	padding: 1rem;
+	flex-basis: 100%;
+	display: flex;
+	background: #33686B;
+}
+input, button {
+	padding: 0.5rem;
+	display: block;
+	margin-top: 0.3rem;
+	width: 15rem;
+}
+
+input.ng-invalid:not(.ng-pristine) {
+	border-left: 5px solid red;
+	color: red;
+}
+.error {
+	font-size: 1rem;
+	margin-top: 0.2rem;
+	color: red;
+}

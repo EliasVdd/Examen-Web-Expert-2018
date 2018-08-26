@@ -1,0 +1,7 @@
+<form #form="ngForm" (ngSubmit)="submit(form)">
+    First name: <input type="text" name="first" [(ngModel)]="first" required/>
+    Last name: <input type="text" name="last" [(ngModel)]="last" required/>
+    Genre: <input type="text" name="genre" [(ngModel)]="genre" required/>
+    Date of birth: <input type="date" name="birthdate" [(ngModel)]="birthdate" required/>
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+</form>

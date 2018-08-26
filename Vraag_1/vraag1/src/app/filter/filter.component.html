@@ -1,0 +1,5 @@
+<select name=“filter” [(ngModel)]="filter">
+  <option value="all">All</option>
+  <option *ngFor="let item of filters" [value]="item">{{item}}</option>
+</select>
+<button type="submit" (click)="onChange()">Filter</button>

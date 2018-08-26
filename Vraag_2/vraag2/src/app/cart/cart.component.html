@@ -1,0 +1,6 @@
+<div *ngFor="let product of cart">
+  <p>{{product.name}} {{ product.price | currency:'EUR' }} - <a (click)="removeFromCart(product)">delete</a></p>
+  <hr/>
+</div>
+<p>Total: {{ total | currency:'EUR' }}<br/>Leveradres: {{ targetAddress }}</p>
+<button type="submit" (click)="checkout()">Checkout</button>

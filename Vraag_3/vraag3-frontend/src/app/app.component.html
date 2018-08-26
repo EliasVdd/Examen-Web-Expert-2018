@@ -1,0 +1,14 @@
+<h1>Artist list</h1>
+<table class="artist-table">
+  <tr>
+    <th>First name</th><th>Last name</th><th>Details</th><th>Delete</th>
+  </tr>
+  <tr *ngFor="let artist of artistList">
+    <td>{{ artist.first}}</td>
+    <td>{{ artist.last }}</td>
+    <td><button (click)="showDetails(artist._id)">Show details</button></td>
+    <td><button (click)="deleteArtist(artist._id)">Delete</button></td>
+  </tr>
+</table>
+
+<app-add-artist (onSubmit)="createArtist($event)"></app-add-artist>

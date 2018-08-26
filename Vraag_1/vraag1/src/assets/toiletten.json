@@ -1,0 +1,44 @@
+[
+    {
+        "adres": "Elfde-Liniestraat 24",
+        "gemeente": "Hasselt",
+        "gratis": true,
+        "prijs": 0,
+        "afbeelding": "assets/default.jpg"
+    },
+    {
+        "adres": "Capucienenstraat 26",
+        "gemeente": "Hasselt",
+        "gratis": false,
+        "prijs": 0.70,
+        "afbeelding": "assets/default.jpg"
+    },
+    {
+        "adres": "Bokrijklaan 5-9",
+        "gemeente": "Genk",
+        "gratis": false,
+        "prijs": 0.5,
+        "afbeelding": "assets/default.jpg"
+    },
+    {
+        "adres": "Stationsstraat 24",
+        "gemeente": "Zonhoven",
+        "gratis": true,
+        "prijs": 0,
+        "afbeelding": "assets/default.jpg"
+    },
+    {
+        "adres": "Spoorstraat 51",
+        "gemeente": "Diepenbeek",
+        "gratis": true,
+        "prijs": 0,
+        "afbeelding": "assets/default.jpg"
+    },
+    {
+        "adres": "Stationsstraat 37",
+        "gemeente": "Diepenbeek",
+        "gratis": true,
+        "prijs": 0,
+        "afbeelding": "assets/default.jpg"
+    }
+]

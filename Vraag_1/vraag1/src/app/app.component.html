@@ -1,0 +1,17 @@
+<h1>ToTheLoo</h1>
+<p>Een lijst van openbare wc's en voorzieningen</p>
+
+<app-filter (filterChange)="newFilter($event)"></app-filter>
+
+<div>
+  <p>Mijn favoriete toiletten:</p>
+  <div *ngIf="favoriteToiletten && favoriteToiletten.length">
+    <div *ngFor="let item of favoriteToiletten">{{ item.adres }}</div>
+  </div>
+</div>
+
+<div *ngIf="toilets && toilets.length">
+  <app-toilet-item *ngFor="let item of toilets | gemeenteFilter:zoekGemeente"
+                   (dblclick)="storeFavorite(item)"
+                   [toilet]="item"></app-toilet-item>
+</div>
